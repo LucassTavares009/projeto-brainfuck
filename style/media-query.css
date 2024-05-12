@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    
+    .img-nosso {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .audio-2{
+        margin-top: 30px;
+    }
+
+    .audio-3 {
+        margin-top: 60px;
+    }
 }
