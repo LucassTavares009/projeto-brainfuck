@@ -1,6 +1,82 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, rgb(255, 188, 199), white);
+        color: darkred;
+    }
+
+    .animation {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .bolhas {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        opacity: 50%;
+    }
+
+    .bolhas span {
+        width: 15px;
+        height: 15px;
+        background-color: #ff0095;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px #ff009544,
+        0 0 50px #ff0095,
+        0 0 100px #ff0095;
+        animation: animar calc(30s / var(--i)) linear infinite;
+    }
+
+    @keyframes animar {
+        0% {
+            transform: translateY(100vh) scale(0);
+        }
+        100% {
+            transform: translateY(-10vh) scale(1);
+        }
+    }
+
+    .bolhas span:nth-of-type(even) {
+        background-color: #ff0000;
+        box-shadow: 0 0 0 5px #ff000044,
+        0 0 50px #ff0000,
+        0 0 100px #ff0000;
+    }
+
+    .hel {
+        justify-content: center;
+    }
+
+    .fiona {
+        margin-right: 90px;
+    }
+
+    .cu {
+        font-size: .8em;
+        color: white;
+    }
+
+    #container-main-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-main {
+        max-width: 1000px;
+    }
+
+    .happy {
+        color: rgb(255, 0, 0);
+        font-weight: 600;
+    }
+
     .img-nosso {
         flex-direction: row;
         justify-content: space-around;
@@ -13,4 +89,5 @@
     .audio-3 {
         margin-top: 60px;
     }
+
 }

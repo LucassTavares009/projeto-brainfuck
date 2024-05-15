@@ -10,7 +10,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(255, 130, 150);
 }
 
@@ -103,6 +103,12 @@ audio {
     width: 150px;
 }
 
+audio::-webkit-media-controls-panel {
+    background-color: rgb(247, 180, 191);
+    color: white;
+}
+
+
 #container-footer {
     display: flex;
     align-items: center;
@@ -119,4 +125,17 @@ audio {
     border-radius: 50%;
     margin-left: 20px;
     max-width: 40px;
+}
+
+::-webkit-scrollbar {
+    max-width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    max-width: 10px;
+    background-color: rgb(233, 105, 126);
+}
+
+.cu {
+    color: white;
 }
